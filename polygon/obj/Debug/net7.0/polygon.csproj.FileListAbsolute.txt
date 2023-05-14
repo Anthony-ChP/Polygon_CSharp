@@ -1,0 +1,15 @@
+C:\fttb1\vs\CSharp\Polygon_CSharp\polygon\obj\Debug\net7.0\polygon.csproj.AssemblyReference.cache
+C:\fttb1\vs\CSharp\Polygon_CSharp\polygon\obj\Debug\net7.0\polygon.GeneratedMSBuildEditorConfig.editorconfig
+C:\fttb1\vs\CSharp\Polygon_CSharp\polygon\obj\Debug\net7.0\polygon.AssemblyInfoInputs.cache
+C:\fttb1\vs\CSharp\Polygon_CSharp\polygon\obj\Debug\net7.0\polygon.AssemblyInfo.cs
+C:\fttb1\vs\CSharp\Polygon_CSharp\polygon\obj\Debug\net7.0\polygon.csproj.CoreCompileInputs.cache
+C:\fttb1\vs\CSharp\Polygon_CSharp\polygon\bin\Debug\net7.0\polygon.exe
+C:\fttb1\vs\CSharp\Polygon_CSharp\polygon\bin\Debug\net7.0\polygon.deps.json
+C:\fttb1\vs\CSharp\Polygon_CSharp\polygon\bin\Debug\net7.0\polygon.runtimeconfig.json
+C:\fttb1\vs\CSharp\Polygon_CSharp\polygon\bin\Debug\net7.0\polygon.dll
+C:\fttb1\vs\CSharp\Polygon_CSharp\polygon\bin\Debug\net7.0\polygon.pdb
+C:\fttb1\vs\CSharp\Polygon_CSharp\polygon\obj\Debug\net7.0\polygon.dll
+C:\fttb1\vs\CSharp\Polygon_CSharp\polygon\obj\Debug\net7.0\refint\polygon.dll
+C:\fttb1\vs\CSharp\Polygon_CSharp\polygon\obj\Debug\net7.0\polygon.pdb
+C:\fttb1\vs\CSharp\Polygon_CSharp\polygon\obj\Debug\net7.0\polygon.genruntimeconfig.cache
+C:\fttb1\vs\CSharp\Polygon_CSharp\polygon\obj\Debug\net7.0\ref\polygon.dll

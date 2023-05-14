@@ -16,13 +16,14 @@ namespace polygon
         {
             double result;
             result = Math.Sqrt((DVertexes[a].x - DVertexes[b].x) * (DVertexes[a].x - DVertexes[b].x) + (DVertexes[a].y - DVertexes[b].y) * (DVertexes[a].y - DVertexes[b].y));
-            // Debug strings
+            /*// Debug strings
             Console.WriteLine($"Points {a}, {b}");
             Console.WriteLine($"a.x = {DVertexes[a].x}, a.y = {DVertexes[a].y}");
             Console.WriteLine($"b.x = {DVertexes[b].x}, b.y = {DVertexes[b].y}");
             Console.WriteLine($"[a,b] = {result}");
             Console.WriteLine("---------------------------------");
             // _____________
+           */
 
             return result;
         }
@@ -44,7 +45,7 @@ namespace polygon
             return result;
         }
 
-        public void DAddVertex(double x, double y) //Добавление новой вершины. Увеличиваем количество вершин на 1 и последнец в массив вершин записываем точку, переданную параметром
+        public void DAddVertex(DPoint PointToAdd) //Добавление новой вершины. Увеличиваем количество вершин на 1 и последнец в массив вершин записываем точку, переданную параметром
         {             //Если вершин еще нет, то инициализируем массив вершин и добавляем в него точку
 
 
@@ -52,8 +53,9 @@ namespace polygon
             {
                 DVertexes = new DPoint[1];
                 DVertexes[0] = new DPoint();
-                DVertexes[0].x = x;
-                DVertexes[0].y = y;
+                DVertexes[0].x = PointToAdd.x;
+                DVertexes[0].y = PointToAdd.y;
+
                 // Debug strings
                 Console.WriteLine("First vertex:");
                 DVertexes[0].Print();
@@ -64,8 +66,9 @@ namespace polygon
             {
                 Array.Resize(ref DVertexes, DVertexes.Length + 1);
                 DVertexes[DVertexes.Length - 1] = new DPoint();
-                DVertexes[DVertexes.Length - 1].x = x;
-                DVertexes[DVertexes.Length - 1].y = y;
+                DVertexes[DVertexes.Length - 1].x = PointToAdd.x;
+                DVertexes[DVertexes.Length - 1].y = PointToAdd.y;
+                
                 // Debug Strings
                 Console.WriteLine("Point to add:");
                 DVertexes[DVertexes.Length - 1].Print();
