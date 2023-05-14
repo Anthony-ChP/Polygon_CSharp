@@ -16,8 +16,5 @@ dacha.DAddVertex(a);
 a.CreatePointXY(0, 10);
 dacha.DAddVertex(a);
 
-Console.WriteLine(dacha.DPerimeter());
-
-//dacha.DPolygonPrint();
-
-
+dacha.DPolygonPrint();
+Console.WriteLine($"Периметр многоугольника равен: {dacha.DPerimeter()}") ;

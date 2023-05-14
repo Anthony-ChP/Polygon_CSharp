@@ -11,7 +11,7 @@ namespace polygon
         public double x = 0.0;   // Координата х точки
         public double y = 0.0;   // Координата у точки 
 
-        public void Print()     // Вывод координат на экран
+        public void Print()     // Вывод координат точки на экран
         {
             Console.WriteLine($"х: {x}  у: {y}");
         }
