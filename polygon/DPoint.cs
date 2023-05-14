@@ -15,7 +15,7 @@ namespace polygon
         {
             Console.WriteLine($"х: {x}  у: {y}");
         }
-        public void CreatePointXY( double xx, double yy )
+        public void CreatePointXY(double xx, double yy)
         {
             x = xx; 
             y = yy;

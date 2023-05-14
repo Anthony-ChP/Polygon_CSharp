@@ -7,10 +7,14 @@ a.x = 0;
 //Console.Write("Vvedi Y: ");
 a.y = 0;
 DPolygon dacha = new DPolygon();
-dacha.DAddVertex(10, 10);
-dacha.DAddVertex(10, 0);
-dacha.DAddVertex(0, 0);
-dacha.DAddVertex(0, 10);
+a.CreatePointXY(10, 10);
+dacha.DAddVertex(a);
+a.CreatePointXY(10, 0);
+dacha.DAddVertex(a);
+a.CreatePointXY(0, 0);
+dacha.DAddVertex(a);
+a.CreatePointXY(0, 10);
+dacha.DAddVertex(a);
 
 Console.WriteLine(dacha.DPerimeter());
 
