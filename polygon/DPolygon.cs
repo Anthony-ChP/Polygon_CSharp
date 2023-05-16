@@ -12,14 +12,14 @@ namespace polygon
 
     {
 
-        double DPointDistance(int a, int b)  // Раастояние между вершинами с индексами a b многоугольника. 
+        double DPointDistance(int a, int b)  // Расстояние между вершинами с индексами a b многоугольника. 
         {                                    // Квадратный корень из суммы квадратов разностей соответствующих координат
             double result;
             result = Math.Sqrt((DVertexes[a].x - DVertexes[b].x) * (DVertexes[a].x - DVertexes[b].x) + (DVertexes[a].y - DVertexes[b].y) * (DVertexes[a].y - DVertexes[b].y));
             return result;
         }
 
-        DPoint[] DVertexes = new DPoint[0];// вершины 
+        DPoint[] DVertexes = new DPoint[0];// вершины храним в массиве. тип элементов - точка(DPoint)
 
         public double DPerimeter()  // Периметр многоугольника
         {
@@ -32,24 +32,36 @@ namespace polygon
             return result;
         }
 
-        public void DAddVertex(DPoint PointToAdd) //Добавление новой вершины. Увеличиваем количество вершин на 1 и последней в массив вершин записываем точку, переданную параметром
+        public double DSquare()  // Площадь многоугольника. Считается как сумма площадей треугольников, на которые разбивается многоугольник
+        {
+            double result = 0;
+            int i;
+
+
+            if (DVertexes.Length >= 3)
+            {
+                for (i = 2; i < DVertexes.Length; i++)
+                {
+                    result += DGeron(DPointDistance(0, i - 1), DPointDistance(i - 1, i), DPointDistance(i, 0));
+                }
+            }
+
+            return result;
+        }
+        static double DGeron(double a, double b, double c) // Площадь треугольника вычисляется по формуле Герона
+        {
+            double p, result;
+
+            p = (a + b + c) / 2;
+            result = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
+            
+            return result;
+        }
+        public void DAddVertex(double x, double y) //Добавление новой вершины. Увеличиваем количество вершин на 1 и последней в массив вершин записываем точку, переданную параметром
         {                                         //Если вершин еще нет, то инициализируем массив вершин и добавляем в него точку
+            Array.Resize(ref DVertexes, DVertexes.Length + 1);
+            DVertexes[DVertexes.Length - 1] = new DPoint(x, y);                
 
-
-            if (DVertexes.Length == 0)
-            {
-                DVertexes = new DPoint[1];
-                DVertexes[0] = new DPoint();
-                DVertexes[0].x = PointToAdd.x;
-                DVertexes[0].y = PointToAdd.y;
-            }
-            else
-            {
-                Array.Resize(ref DVertexes, DVertexes.Length + 1);
-                DVertexes[DVertexes.Length - 1] = new DPoint();
-                DVertexes[DVertexes.Length - 1].x = PointToAdd.x;
-                DVertexes[DVertexes.Length - 1].y = PointToAdd.y;
-            }
         }
 
         public void DPolygonPrint()   // Вывод координат вершин многоугольгика на экран

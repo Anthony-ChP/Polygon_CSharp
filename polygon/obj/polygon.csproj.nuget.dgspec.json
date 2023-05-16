@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\fttb1\\vs\\CSharp\\Polygon_CSharp\\polygon\\polygon.csproj": {}
+    "C:\\Users\\архимед\\Source\\Repos\\Anthony-ChP\\Polygon_CSharp\\polygon\\polygon.csproj": {}
   },
   "projects": {
-    "C:\\fttb1\\vs\\CSharp\\Polygon_CSharp\\polygon\\polygon.csproj": {
+    "C:\\Users\\архимед\\Source\\Repos\\Anthony-ChP\\Polygon_CSharp\\polygon\\polygon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\fttb1\\vs\\CSharp\\Polygon_CSharp\\polygon\\polygon.csproj",
+        "projectUniqueName": "C:\\Users\\архимед\\Source\\Repos\\Anthony-ChP\\Polygon_CSharp\\polygon\\polygon.csproj",
         "projectName": "polygon",
-        "projectPath": "C:\\fttb1\\vs\\CSharp\\Polygon_CSharp\\polygon\\polygon.csproj",
+        "projectPath": "C:\\Users\\архимед\\Source\\Repos\\Anthony-ChP\\Polygon_CSharp\\polygon\\polygon.csproj",
         "packagesPath": "C:\\Users\\архимед\\.nuget\\packages\\",
-        "outputPath": "C:\\fttb1\\vs\\CSharp\\Polygon_CSharp\\polygon\\obj\\",
+        "outputPath": "C:\\Users\\архимед\\Source\\Repos\\Anthony-ChP\\Polygon_CSharp\\polygon\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\архимед\\AppData\\Roaming\\NuGet\\NuGet.Config",
