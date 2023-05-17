@@ -1,23 +1,14 @@
 ﻿using polygon;
 
 
-DPoint a = new DPoint();
-//Console.Write("Vvedi X: ");
-a.x = 0;
-//Console.Write("Vvedi Y: ");
-a.y = 0;
+
 DPolygon dacha = new DPolygon();
-a.CreatePointXY(10, 10);
-dacha.DAddVertex(a);
-a.CreatePointXY(10, 0);
-dacha.DAddVertex(a);
-a.CreatePointXY(0, 0);
-dacha.DAddVertex(a);
-a.CreatePointXY(0, 10);
-dacha.DAddVertex(a);
 
-Console.WriteLine(dacha.DPerimeter());
+dacha.DAddVertex(885.92, 285.23);
+dacha.DAddVertex(905.23, 289.76);
+dacha.DAddVertex(884.55, 330.37);
+dacha.DAddVertex(867.07, 329.62);
 
-//dacha.DPolygonPrint();
-
-
+dacha.DPolygonPrint();
+Console.WriteLine($"Perimeter: {dacha.DPerimeter()}") ;
+Console.WriteLine($"Square: {dacha.DSquare()}");
